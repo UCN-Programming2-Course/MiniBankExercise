@@ -7,10 +7,10 @@ public class Database {
 	public static Connection getConnection() throws SQLServerException {
 
 		SQLServerDataSource ds = new SQLServerDataSource();
-		ds.setUser("companyuser");
-		ds.setPassword("ThisIsALongPassword");
+		ds.setUser("minibankuser");
+		ds.setPassword("password");
 		ds.setServerName("localhost\\sqlexpress");
-		ds.setDatabaseName("Company");
+		ds.setDatabaseName("Minibank01");
 		return ds.getConnection();
 	}
 }
